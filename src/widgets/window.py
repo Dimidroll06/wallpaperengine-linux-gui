@@ -1,6 +1,6 @@
 from PyQt6.QtWidgets import QMainWindow, QWidget
 
-from .layouts.main_layout import MainLayout
+from .layouts import MainLayout
 
 
 class Window(QMainWindow):
@@ -14,3 +14,7 @@ class Window(QMainWindow):
         self.container.setLayout(self.mainLayout)
 
         self.setCentralWidget(self.container)
+
+    def closeEvent(self, a0):
+        a0.ignore()
+        self.hide()
