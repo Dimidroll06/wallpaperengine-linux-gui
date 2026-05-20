@@ -14,3 +14,7 @@ class Window(QMainWindow):
         self.container.setLayout(self.mainLayout)
 
         self.setCentralWidget(self.container)
+
+    def closeEvent(self, a0):
+        a0.ignore()
+        self.hide()
