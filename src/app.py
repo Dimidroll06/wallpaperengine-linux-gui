@@ -2,7 +2,7 @@ import sys
 
 from PyQt6.QtWidgets import QApplication
 
-from .widgets.window import Window
+from .widgets import Window
 
 
 class Application(QApplication):

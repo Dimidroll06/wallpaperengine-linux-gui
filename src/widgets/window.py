@@ -1,6 +1,6 @@
 from PyQt6.QtWidgets import QMainWindow, QWidget
 
-from .layouts.main_layout import MainLayout
+from .layouts import MainLayout
 
 
 class Window(QMainWindow):
